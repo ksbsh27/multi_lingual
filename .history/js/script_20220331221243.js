@@ -1,0 +1,1 @@
+$images = document.querySelectorAll();

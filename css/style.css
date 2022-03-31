@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+header {
+  color: #fff;
+  background: #4554aa;
+}
+
+header nav {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 16px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 16px;
+}
+
+header nav ul li:last-child {
+  margin-right: 0;
+}
+
+footer {
+  color: #fff;
+  background: black;
+  height: 120px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  background: #333;
+  font-family: "roboto";
+}
+
+main {
+  background: #fff;
+  height: calc(100vh - 60px - 120px);
+}
+
+main .mv_images {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+main .mv_images img {
+  width: auto;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: 3s ease-in-out;
+  transition: 3s ease-in-out;
+  -webkit-transform: scale(2.2);
+          transform: scale(2.2);
+}
+
+main .mv_images img.fshow {
+  opacity: 1;
+  -webkit-transition: none;
+  transition: none;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+main .mv_images img.show {
+  opacity: 1;
+  -webkit-transition: 3s ease-in-out;
+  transition: 3s ease-in-out;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+/*# sourceMappingURL=style.css.map */
